@@ -1,98 +1,102 @@
-# Kricko Desktop Releases 🚀
+<div align="center">
 
-Official Windows binaries for **Kricko Desktop (v0.1.0)** — 100% Private, On-Device AI by Cortiqa.
+# 🦙 Kricko Desktop
 
----
+### Fast, 100% Private, On-Device AI for Windows
+Built by [Cortiqa](https://cortiqa.co)
 
-## 📁 Release Files in this Folder
+[![Release](https://img.shields.io/badge/Release-v0.1.0-blue.svg)](https://github.com/cortiqa-ai/kricko/releases/tag/v0.1.0)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg)](https://github.com/cortiqa-ai/kricko/releases)
+[![Offline](https://img.shields.io/badge/Privacy-100%25%20Offline-success.svg)](https://cortiqa.co)
+[![Discord](https://img.shields.io/badge/Community-Discord-5865F2.svg)](https://discord.gg/bJrv4mF3c3)
+[![Google Play](https://img.shields.io/badge/Mobile-Google%20Play-414141.svg)](https://play.google.com/store/apps/details?id=co.cortiqa.edgeflow)
 
-| File Name | Size | Type | Description |
-| :--- | :--- | :--- | :--- |
-| **`kricko_0.1.0_x64-setup.exe`** | ~2.9 MB | **Setup Installer (NSIS)** | **(Recommended for Website)** Double-click to install. Creates Desktop shortcut & Start Menu entry with the official Kricko white-background logo. |
-| **`kricko-desktop.exe`** | ~9.2 MB | **Portable Executable** | Standalone app. Runs directly without requiring installation. |
-| **`kricko_0.1.0_x64_en-US.msi`** | ~3.8 MB | **Windows MSI Installer** | Standard MSI installer package for Windows systems. |
+<br />
 
----
+**Kricko** is a next-generation desktop AI assistant that runs powerful Large Language Models directly on your computer's hardware. No subscriptions. No cloud logging. Zero telemetry.
 
-## 🚀 Method 1: Publish to GitHub Releases (Recommended)
+[📥 **Download Latest Windows Installer (.exe)**](https://github.com/cortiqa-ai/kricko/releases/download/v0.1.0/kricko_0.1.0_x64-setup.exe) &nbsp;|&nbsp; [🌐 **Official Website**](https://cortiqa.co) &nbsp;|&nbsp; [💬 **Join Discord**](https://discord.gg/bJrv4mF3c3)
 
-GitHub Releases is the industry standard for distributing desktop apps (used by Ollama, LM Studio, VS Code, etc.). It gives you free high-speed download bandwidth and direct links.
-
-### Steps:
-1. Go to your repository on GitHub: `https://github.com/<your-username>/kricko`
-2. On the right-side panel, click on **Releases** ➔ **Draft a new release** (or click `Create a new release`).
-3. Fill in the release details:
-   - **Choose a tag**: Type `v0.1.0` and click *Create new tag*.
-   - **Release title**: `Kricko Desktop v0.1.0 (Windows)`
-   - **Description**:
-     ```markdown
-     ## Kricko Desktop v0.1.0
-
-     Fast, private, 100% local AI assistant on your device.
-
-     ### What's New:
-     -  High-speed local LLM chat engine (Gemma, Llama, Qwen, DeepSeek).
-     -  Modern interface with updated Kricko branding.
-     -  100% Offline execution with zero telemetry.
-
-     ### Downloads:
-     - **Windows Installer (Recommended)**: `kricko_0.1.0_x64-setup.exe`
-     - **Portable (.exe)**: `kricko-desktop.exe`
-     ```
-4. In the **"Attach binaries by dropping them here"** box, drag and drop:
-   - `kricko_0.1.0_x64-setup.exe`
-   - `kricko-desktop.exe`
-   - `kricko_0.1.0_x64_en-US.msi`
-5. Click **Publish release**.
+</div>
 
 ---
 
-## 🌐 Website Integration (How to put on your Website)
+## 🚀 Why Kricko?
 
-Once uploaded to GitHub Releases (or your own server/CDN), add a download button on your website (`cortiqa.co`):
+Most AI tools stream your queries, private documents, and sensitive code to remote servers. **Kricko runs entirely on your local machine**:
 
-### Direct Download Link Format:
-```text
-https://github.com/<your-username>/kricko/releases/download/v0.1.0/kricko_0.1.0_x64-setup.exe
-```
-
-### HTML Code for Website:
-```html
-<!-- Kricko Download Button -->
-<a href="https://github.com/<your-username>/kricko/releases/download/v0.1.0/kricko_0.1.0_x64-setup.exe" 
-   class="kricko-download-btn" 
-   style="display: inline-flex; align-items: center; gap: 10px; background: #000; color: #fff; padding: 12px 24px; border-radius: 9999px; text-decoration: none; font-weight: 600; font-family: sans-serif;">
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-    <polyline points="7 10 12 15 17 10"></polyline>
-    <line x1="12" y1="15" x2="12" y2="3"></line>
-  </svg>
-  Download Kricko for Windows (.exe)
-</a>
-```
-
-### React / Tailwind CSS Code:
-```tsx
-<a
-  href="https://github.com/<your-username>/kricko/releases/download/v0.1.0/kricko_0.1.0_x64-setup.exe"
-  className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-neutral-900 hover:bg-neutral-800 text-white font-medium text-sm transition-all shadow-md hover:shadow-lg"
->
-  <Download className="w-4 h-4" />
-  Download for Windows
-</a>
-```
+- 🔒 **100% Private & Offline**: Works with your internet completely disconnected. Your prompts and outputs never leave your disk.
+- ⚡ **Zero Latency & No Queueing**: Instant token generation powered by local CPU and GPU acceleration.
+- 💸 **No Monthly Subscriptions**: Completely free to use with your own hardware.
+- 🦙 **Universal GGUF Support**: Run Gemma, Llama 3, Qwen, DeepSeek, Mistral, and any custom `.gguf` model you have.
+- 🔌 **OpenAI-Compatible Local API**: Acts as a local server at `http://localhost:8080/v1` for your favorite developer extensions, VS Code, and automation scripts.
 
 ---
 
-## 💻 Method 2: GitHub CLI (`gh`) Command
+## 📥 Installation
 
-If you have GitHub CLI installed, you can create and publish the release directly from your terminal:
+Getting started with Kricko takes under a minute:
 
-```bash
-gh release create v0.1.0 ^
-  kricko_0.1.0_x64-setup.exe ^
-  kricko-desktop.exe ^
-  kricko_0.1.0_x64_en-US.msi ^
-  --title "Kricko Desktop v0.1.0" ^
-  --notes "First official release of Kricko Desktop for Windows."
-```
+1. **Download the Installer**:  
+   Click to download [**`kricko_0.1.0_x64-setup.exe`**](https://github.com/cortiqa-ai/kricko/releases/download/v0.1.0/kricko_0.1.0_x64-setup.exe).
+2. **Install**:  
+   Double-click the setup file to install. It will place a clean Kricko shortcut on your Desktop and in your Start Menu.
+3. **Launch Kricko**:  
+   Open the app from your Desktop or Start Menu.
+
+> *Prefer a portable version without installation?*  
+> Download [**`kricko-desktop.exe`**](https://github.com/cortiqa-ai/kricko/releases/download/v0.1.0/kricko-desktop.exe) to run anywhere on Windows.
+
+---
+
+## 💡 How to Use
+
+### 1. Download an AI Model
+When you open Kricko for the first time:
+- Click **Manage Models** in the sidebar.
+- Choose your preferred model (e.g. **Gemma 2B**, **Llama 3.2**, or **Qwen 2.5**) and click **Download**.
+- *Optional:* You can also paste any custom HuggingFace GGUF direct download link!
+
+### 2. Start Chatting
+- Select your downloaded model from the bottom model selector.
+- Ask questions, write code, summarize documents, or brainstorm ideas completely offline!
+
+### 3. Markdown, Math & Code Highlighting
+Kricko features built-in support for:
+- Full GitHub Flavored Markdown (tables, checklists, blockquotes).
+- LaTeX math formulas ($`E = mc^2`$ and block equations).
+- Syntax-highlighted code blocks with 1-click copy.
+
+---
+
+## 🖥️ System Requirements
+
+| Specification | Minimum | Recommended |
+| :--- | :--- | :--- |
+| **Operating System** | Windows 10 (64-bit) | Windows 11 (64-bit) |
+| **Processor** | Intel Core i5 / AMD Ryzen 5 | Intel Core i7 / AMD Ryzen 7+ |
+| **Memory (RAM)** | 8 GB RAM (for 2B–3B models) | 16 GB+ RAM (for 7B–8B models) |
+| **Storage** | 10 GB free SSD space | 20 GB+ free SSD space |
+| **Graphics (Optional)** | Integrated Graphics | NVIDIA RTX / AMD Radeon GPU |
+
+---
+
+## 📱 Mobile App (Android)
+
+Kricko is also available for Android devices, bringing on-device local AI straight to your pocket:
+- [👉 **Download Kricko on Google Play Store**](https://play.google.com/store/apps/details?id=co.cortiqa.edgeflow)
+
+---
+
+## 🤝 Community & Support
+
+Have questions, suggestions, or need help?
+- 💬 **Discord Community**: [https://discord.gg/bJrv4mF3c3](https://discord.gg/bJrv4mF3c3)
+- 🌐 **Website**: [cortiqa.co](https://cortiqa.co)
+- ✉️ **Email Support**: [support@cortiqa.co](mailto:support@cortiqa.co)
+
+---
+
+<div align="center">
+  <sub>Crafted with ❤️ by the Cortiqa Team. 100% Private, On-Device Intelligence.</sub>
+</div>
